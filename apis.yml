@@ -1,7 +1,12 @@
 aid: skechers-usa
-url: https://raw.githubusercontent.com/api-evangelist/skechers-usa/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/skechers-usa/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.skechers-usa.com
+description: >-
+  Skechers USA is an American lifestyle and performance footwear company that designs,
+  develops, and markets a diverse range of lifestyle and performance footwear for
+  men, women, and children.
