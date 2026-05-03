@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Skechers U.S.A. Structure",
+  "description": "JSON structure documentation for Skechers digital commerce data model",
+  "version": "1.0",
+  "resources": {
+    "Product": {
+      "description": "A Skechers footwear, apparel, or accessories product",
+      "fields": {
+        "id": { "type": "string", "description": "Unique product identifier / style number" },
+        "name": { "type": "string", "description": "Product name" },
+        "styleNumber": { "type": "string", "description": "Skechers internal style number" },
+        "description": { "type": "string", "description": "Full product description" },
+        "category": { "type": "string", "description": "Primary product category" },
+        "subcategory": { "type": "string", "description": "Product subcategory" },
+        "collection": { "type": "string", "description": "Product line or collection" },
+        "technology": { "type": "array", "items": "string", "description": "Proprietary technologies" },
+        "gender": { "type": "string", "description": "Target gender" },
+        "colors": { "type": "array", "items": "ColorVariant", "description": "Available color options" },
+        "sizes": { "type": "array", "items": "SizeVariant", "description": "Available sizes" },
+        "pricing": { "type": "object", "items": "Pricing", "description": "Price information" }
+      }
+    },
+    "Order": {
+      "description": "A customer order placed on skechers.com or in-store",
+      "fields": {
+        "orderId": { "type": "string", "description": "Unique order identifier" },
+        "orderDate": { "type": "string", "format": "date-time", "description": "Order placement date" },
+        "status": { "type": "string", "enum": ["Pending", "Processing", "Shipped", "Delivered", "Returned", "Cancelled"] },
+        "customerId": { "type": "string", "description": "Customer account ID" },
+        "items": { "type": "array", "items": "OrderItem", "description": "Ordered items" },
+        "shippingAddress": { "type": "object", "items": "Address", "description": "Delivery address" },
+        "trackingNumber": { "type": "string", "description": "Carrier tracking number" },
+        "totalAmount": { "type": "number", "description": "Order total in USD" }
+      }
+    },
+    "Customer": {
+      "description": "A registered Skechers customer account",
+      "fields": {
+        "customerId": { "type": "string", "description": "Unique customer identifier" },
+        "email": { "type": "string", "format": "email", "description": "Customer email address" },
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "loyaltyAccount": { "type": "object", "items": "LoyaltyAccount", "description": "Skechers Plus loyalty account" },
+        "preferredSize": { "type": "string", "description": "Default shoe size" }
+      }
+    },
+    "LoyaltyAccount": {
+      "description": "A Skechers Plus loyalty program account",
+      "fields": {
+        "memberId": { "type": "string", "description": "Loyalty program member ID" },
+        "points": { "type": "integer", "description": "Current points balance" },
+        "tier": { "type": "string", "description": "Membership tier" },
+        "totalSpend": { "type": "number", "description": "Total lifetime spend qualifying for loyalty" },
+        "joinDate": { "type": "string", "format": "date", "description": "Date the customer joined Skechers Plus" }
+      }
+    },
+    "Store": {
+      "description": "A Skechers retail store location",
+      "fields": {
+        "storeId": { "type": "string", "description": "Unique store identifier" },
+        "name": { "type": "string", "description": "Store display name" },
+        "type": { "type": "string", "enum": ["Owned", "Franchise", "Outlet", "Licensed"], "description": "Store ownership type" },
+        "address": { "type": "object", "items": "Address", "description": "Physical address" },
+        "coordinates": { "type": "object", "description": "Latitude and longitude" },
+        "phone": { "type": "string", "description": "Store phone number" },
+        "hours": { "type": "object", "description": "Operating hours by day" },
+        "country": { "type": "string", "description": "ISO country code" }
+      }
+    }
+  }
+}

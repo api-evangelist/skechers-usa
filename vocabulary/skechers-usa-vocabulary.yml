@@ -1,0 +1,166 @@
+aid: skechers-usa
+name: Skechers U.S.A. Vocabulary
+description: >-
+  Domain vocabulary, brand terminology, and taxonomy for Skechers U.S.A.,
+  covering product lines, proprietary technologies, retail channels, loyalty programs,
+  and digital commerce concepts.
+created: '2026-05-02'
+modified: '2026-05-02'
+
+domains:
+  - name: Product Collections
+    description: Skechers signature product lines and collections
+    terms:
+      - term: Slip-ins
+        definition: >-
+          Skechers' hands-free footwear innovation featuring a specially engineered
+          heel panel that allows customers to slip their foot in without using their
+          hands. A registered Skechers trademark introduced in 2022.
+        aliases: [Hands Free Slip-ins, Skechers Slip-ins]
+        relatedTerms: [Relaxed Fit, SNEAK-EASE]
+
+      - term: Go Walk
+        definition: >-
+          Skechers' signature walking shoe collection designed for maximum comfort
+          and walkability, featuring lightweight Goga Mat insole technology and
+          flexible responsive outsoles.
+        aliases: [GOwalk]
+        relatedTerms: [Goga Mat, Walk 5, Walk 7]
+
+      - term: D'Lites
+        definition: >-
+          A heritage chunky-sole dad sneaker collection from Skechers that became
+          a global fashion trend. Features the brand's signature thick sole profile
+          and retro colorways.
+        relatedTerms: [Chunky Sole, Sport Lite]
+
+      - term: Relaxed Fit
+        definition: >-
+          A Skechers product classification indicating extra width in the toe box
+          and forefoot for a more comfortable, less constrictive fit. Widely applied
+          across all product categories.
+        relatedTerms: [Wide Fit, Extra Wide]
+
+      - term: Max Cushioning
+        definition: >-
+          Skechers' premium cushioning platform featuring maximum midsole foam
+          volume for impact absorption and all-day comfort, available across athletic
+          and lifestyle categories.
+        relatedTerms: [Ultra Go, Goga Mat]
+
+      - term: Arch Fit
+        definition: >-
+          A Skechers product line featuring a podiatrist-certified arch support
+          insole system developed to provide targeted arch support for comfort
+          and stability throughout the day.
+        relatedTerms: [Podiatrist Certified, Arch Support]
+
+  - name: Proprietary Technologies
+    description: Skechers proprietary material and construction technologies
+    terms:
+      - term: Goga Mat
+        definition: >-
+          Skechers' high-rebound responsive cushioning foam used in insoles and
+          midsoles. Known for its ultra-soft texture, odor control properties,
+          and high energy return for walking and running applications.
+        aliases: [Air-Cooled Goga Mat]
+        relatedTerms: [Go Walk, Max Cushioning]
+
+      - term: Ultra Go
+        definition: >-
+          A lightweight, responsive midsole foam compound used in Skechers
+          performance running and walking footwear, providing energy return
+          comparable to more expensive performance foam alternatives.
+        relatedTerms: [Max Cushioning, Performance Running]
+
+      - term: HYPER BURST
+        definition: >-
+          Skechers' ultra-lightweight outsole compound that provides exceptional
+          cushioning with minimal weight, used in performance running and training
+          footwear.
+        relatedTerms: [Performance Running, Ultra Go]
+
+      - term: Air-Cooled Memory Foam
+        definition: >-
+          Skechers' signature insole technology combining memory foam with an open
+          cell structure that allows airflow for temperature regulation and odor
+          reduction. A key differentiator across many product lines.
+        aliases: [Air Cooled Memory Foam]
+        relatedTerms: [Memory Foam, Relaxed Fit]
+
+  - name: Retail Channels
+    description: Skechers distribution and retail channel terminology
+    terms:
+      - term: Direct-to-Consumer
+        definition: >-
+          Sales made directly to end consumers through Skechers-owned channels
+          including skechers.com, the Skechers mobile app, and company-operated
+          retail stores, as opposed to wholesale sales to third-party retailers.
+        aliases: [DTC, D2C]
+        relatedTerms: [Wholesale, E-Commerce, Retail Stores]
+
+      - term: Wholesale
+        definition: >-
+          Skechers' distribution to third-party retail partners including department
+          stores, sporting goods retailers, footwear specialty stores, and online
+          marketplaces. Represents a significant portion of Skechers' global revenue.
+        relatedTerms: [Direct-to-Consumer, Retail Partners]
+
+      - term: Company-Owned Store
+        definition: >-
+          Skechers retail stores operated directly by Skechers USA, Inc., as
+          distinguished from franchise or licensed store locations.
+        aliases: [owned store, corporate store]
+        relatedTerms: [Franchise, Outlet Store]
+
+      - term: Outlet Store
+        definition: >-
+          Skechers factory outlet retail locations offering prior-season and
+          overstock product at discounted prices, typically located in outlet
+          shopping centers.
+        relatedTerms: [Company-Owned Store, Direct-to-Consumer]
+
+  - name: Customer Programs
+    description: Customer engagement and loyalty program terminology
+    terms:
+      - term: Skechers Plus
+        definition: >-
+          Skechers' free customer loyalty program that allows members to earn
+          points on purchases at skechers.com, in-store, and through the mobile
+          app. Points can be redeemed for discounts on future purchases.
+        aliases: [Skechers Plus Loyalty, loyalty program]
+        relatedTerms: [Points, Rewards, Member Benefits]
+
+      - term: Skechers Elite
+        definition: >-
+          The premium tier of the Skechers Plus loyalty program available to
+          members who reach a spending threshold. Provides enhanced benefits
+          including early access to new products and exclusive discounts.
+        relatedTerms: [Skechers Plus, Loyalty Tier]
+
+  - name: Digital Commerce
+    description: E-commerce and digital platform terminology for Skechers
+    terms:
+      - term: Style Number
+        definition: >-
+          Skechers' internal product identification system. Each unique colorway
+          and style combination has a distinct style number (e.g., 232450-CHAR)
+          used across inventory, ordering, and digital commerce systems.
+        aliases: [SKU, product code, article number]
+        relatedTerms: [Product, Colorway]
+
+      - term: Colorway
+        definition: >-
+          A specific color combination variant of a Skechers shoe style. Each
+          colorway has its own style number and inventory tracking, and may have
+          different availability across sizes and width options.
+        aliases: [color variant, color option]
+        relatedTerms: [Style Number, Product]
+
+      - term: Width
+        definition: >-
+          Skechers offers multiple width options on many styles: Narrow (N),
+          Medium/Standard (M), Wide (W), and Extra Wide (XW), providing fit
+          options for customers with different foot widths.
+        values: ["N (Narrow)", "M (Medium)", "W (Wide)", "XW (Extra Wide)"]
+        relatedTerms: [Relaxed Fit, Product, Size]

@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/api-evangelist/skechers-usa/blob/main/json-schema/skechers-usa-product-schema.json",
+  "title": "Skechers Product",
+  "description": "Schema representing a Skechers footwear or apparel product as available on skechers.com",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique product identifier (style number)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Product name (e.g., 'Skechers Slip-ins: Ultra Flex 3.0')"
+    },
+    "styleNumber": {
+      "type": "string",
+      "description": "Skechers internal style number (e.g., 232450-CHAR)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Full product description"
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary product category",
+      "enum": ["Men's Footwear", "Women's Footwear", "Kids' Footwear", "Apparel", "Accessories"]
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Product subcategory (e.g., 'Athletic', 'Casual', 'Work', 'Sandals')"
+    },
+    "collection": {
+      "type": "string",
+      "description": "Product line or collection name (e.g., 'Slip-ins', 'D'Lites', 'Go Walk')"
+    },
+    "technology": {
+      "type": "array",
+      "description": "Skechers proprietary technologies featured in the product",
+      "items": {
+        "type": "string"
+      },
+      "examples": [["Air-Cooled Goga Mat", "Hands-Free Slip-ins", "Relaxed Fit"]]
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["Men", "Women", "Boys", "Girls", "Unisex", "Toddler"]
+    },
+    "colors": {
+      "type": "array",
+      "description": "Available color variants",
+      "items": {
+        "type": "object",
+        "properties": {
+          "colorCode": { "type": "string" },
+          "colorName": { "type": "string" },
+          "primaryColor": { "type": "string" },
+          "imageUrl": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "sizes": {
+      "type": "array",
+      "description": "Available sizes",
+      "items": {
+        "type": "object",
+        "properties": {
+          "size": { "type": "string" },
+          "width": { "type": "string", "enum": ["N", "M", "W", "XW"] },
+          "inStock": { "type": "boolean" }
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "regularPrice": { "type": "number", "description": "Regular retail price in USD" },
+        "salePrice": { "type": "number", "description": "Sale price if discounted" },
+        "currency": { "type": "string", "default": "USD" }
+      }
+    },
+    "images": {
+      "type": "array",
+      "description": "Product image URLs",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "alt": { "type": "string" },
+          "isPrimary": { "type": "boolean" }
+        }
+      }
+    },
+    "features": {
+      "type": "array",
+      "description": "Key product features and selling points",
+      "items": { "type": "string" }
+    },
+    "materials": {
+      "type": "object",
+      "description": "Material composition",
+      "properties": {
+        "upper": { "type": "string" },
+        "lining": { "type": "string" },
+        "outsole": { "type": "string" },
+        "midsole": { "type": "string" }
+      }
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Product page URL on skechers.com"
+    },
+    "rating": {
+      "type": "object",
+      "properties": {
+        "average": { "type": "number", "minimum": 0, "maximum": 5 },
+        "count": { "type": "integer" }
+      }
+    }
+  },
+  "required": ["id", "name", "category", "gender"]
+}

@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "skechers": "https://www.skechers.com/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Product": "schema:Product",
+    "Order": "schema:Order",
+    "Customer": "schema:Person",
+    "LoyaltyAccount": "schema:LoyaltyProgram",
+    "Store": "schema:LocalBusiness",
+
+    "id": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+    "styleNumber": "skechers:styleNumber",
+    "category": "schema:category",
+    "collection": "skechers:collection",
+    "technology": "skechers:technology",
+    "gender": "schema:audience",
+    "colors": "schema:color",
+    "sizes": "schema:size",
+    "pricing": "schema:offers",
+    "regularPrice": "schema:price",
+    "salePrice": "schema:price",
+    "currency": "schema:priceCurrency",
+    "images": "schema:image",
+    "rating": "schema:aggregateRating",
+    "url": "schema:url",
+    "features": "schema:description",
+    "materials": "schema:material",
+
+    "orderId": "schema:orderNumber",
+    "orderDate": {
+      "@id": "schema:orderDate",
+      "@type": "xsd:dateTime"
+    },
+    "status": "schema:orderStatus",
+    "shippingAddress": "schema:deliveryAddress",
+    "trackingNumber": "skechers:trackingNumber",
+    "totalAmount": "schema:totalPrice",
+
+    "customerId": "schema:identifier",
+    "email": "schema:email",
+    "firstName": "schema:givenName",
+    "lastName": "schema:familyName",
+    "loyaltyAccount": "skechers:loyaltyAccount",
+    "points": "skechers:loyaltyPoints",
+    "tier": "skechers:membershipTier",
+
+    "storeId": "schema:identifier",
+    "storeType": "schema:additionalType",
+    "phone": "schema:telephone",
+    "hours": "schema:openingHoursSpecification",
+    "coordinates": "schema:geo"
+  }
+}
