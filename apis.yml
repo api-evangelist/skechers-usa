@@ -81,7 +81,7 @@ common:
     url: https://www.skechers.com
   - type: Portal
     url: https://www.skechers.com/partners
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/skechers-usa-context.jsonld
   - type: Vocabulary
     url: vocabulary/skechers-usa-vocabulary.yml
