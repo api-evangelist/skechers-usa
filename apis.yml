@@ -77,6 +77,10 @@ apis:
         type: Website
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/skechers
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/skechers
   - type: Website
     url: https://www.skechers.com
   - type: Portal
