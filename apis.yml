@@ -77,6 +77,10 @@ apis:
         type: Website
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/skechers-usa-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/skechers-usa-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/skechers
   - type: LinkedIn
@@ -89,3 +93,5 @@ common:
     url: json-ld/skechers-usa-context.jsonld
   - type: Vocabulary
     url: vocabulary/skechers-usa-vocabulary.yml
+  - url: https://about.skechers.com/feed
+    type: Blog
