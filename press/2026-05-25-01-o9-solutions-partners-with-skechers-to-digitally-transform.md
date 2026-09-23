@@ -1,7 +1,9 @@
 ---
 title: o9 Solutions Partners With Skechers to Digitally Transform ...
 url: https://www.businesswire.com/news/home/20240122515552/en/o9-Solutions-Partners-With-Skechers-to-Digitally-Transform-the-Companys-Retail-Planning-Processes
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Skechers U.S.A." press release artificial intelligence'
 position: 1
 source: serpapi-google

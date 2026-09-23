@@ -1,7 +1,9 @@
 ---
 title: The problem with generative AI, and how it relates to Skechers ...
 url: https://www.instagram.com/reel/DU_LgGaFSxG/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Skechers U.S.A." press release artificial intelligence'
 position: 3
 source: serpapi-google
