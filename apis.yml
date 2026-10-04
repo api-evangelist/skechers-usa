@@ -62,7 +62,6 @@ apis:
       integration partners connect via standardized commerce APIs for marketplace listings,
       affiliate programs, and retailer integrations.
     humanURL: https://www.skechers.com
-    baseURL: https://www.skechers.com
     tags:
       - E-Commerce
       - Retail
@@ -80,7 +79,6 @@ apis:
       integrates with the e-commerce platform, in-store POS systems, and mobile application
       to provide a unified customer profile and rewards tracking across touchpoints.
     humanURL: https://www.skechers.com/loyalty
-    baseURL: https://www.skechers.com
     tags:
       - Loyalty
       - Customer Experience
@@ -99,7 +97,6 @@ apis:
       contact information, and available services. This is integrated into the website,
       mobile app, and third-party mapping services.
     humanURL: https://www.skechers.com/stores
-    baseURL: https://www.skechers.com
     tags:
       - Store Locator
       - Retail
