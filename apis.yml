@@ -106,6 +106,12 @@ apis:
         type: Website
 
 common:
+  - type: Plans
+    url: plans/skechers-usa-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/skechers-usa-rate-limits.yml
+  - type: FinOps
+    url: finops/skechers-usa-finops.yml
   - type: VulnerabilityDisclosure
     url: security/skechers-usa-vulnerability-disclosure.yml
   - type: DomainSecurity
